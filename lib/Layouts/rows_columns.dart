@@ -5,7 +5,27 @@ class RowsAndColumns extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return packingWidgets;
+  }
+}
+
+final packingWidgets = MaterialApp(
+    home: Scaffold(
+      body: Row(
+        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          Expanded(child: Image.asset("assets/ball.png")),
+          Expanded(child: Image.asset("assets/ball.png")),
+          Expanded(child: Image.asset("assets/ball.png")),
+        ],
+      )
+    ), 
+  );
+
+MaterialApp rowsAndColumns()
+{
+  return MaterialApp(
       title : ("Testes com Colunas e Filas"),
       home: Scaffold(
         body: Column(
@@ -51,5 +71,4 @@ class RowsAndColumns extends StatelessWidget {
         ),
       )
     );
-  }
 }
