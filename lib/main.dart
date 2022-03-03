@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:my_flutter/Layouts/rows_columns.dart';
+import 'package:my_flutter/Layouts/standard_widgets.dart';
 
 import 'Layouts/layouts.dart';
 
 void main() {
-  runApp(const RowsAndColumns());
+  runApp(const MyStandardWidgets());
 }
 
 class MyApp extends StatelessWidget {
