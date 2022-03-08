@@ -11,8 +11,18 @@ import 'package:my_flutter/Layouts/views.dart';
 void main() {
   //runApp(const MyViews());
   //runApp(const MyStack());
-  //runApp(const myCardAndTile());
-  runApp(const MyLayouts());
+  runApp(const myCardAndTile());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({ Key? key }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      
+    );
+  }
 }
 
 
